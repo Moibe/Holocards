@@ -1,24 +1,24 @@
 :root {
   --color1: rgb(0, 231, 255);
   --color2: rgb(255, 0, 231);
-  --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
+  --back: url(https://masternode.id/express-checkout.png);
   --charizard1: #fac;
   --charizard2: #ddccaa;
-  --charizardfront: url(https://www.giftcardsify.com/image/cache/catalog/Amazon%20Gift%20Card/Amazon-100-USD-1000x1000.png);
+  --charizardfront: url(https://masternode.id/Amazon50a.png);
   --pika1: #54a29e;
   --pika2: #a79d66;
-  --pikafront: url(https://store.centynova.com/wp-content/uploads/2021/10/uber-150.png.webp);
-  --eevee1: #efb2fb;
+  --pikafront: url(https://masternode.id/Amazon100a.png);
+  --eevee1: #eb5ab8;
   --eevee2: #acc6f8;
-  --eeveefront: url(https://i.pinimg.com/474x/23/87/40/238740bf24b8f9ad5364a607dce0c1db.jpg);
+  --eeveefront: url(https://masternode.id/Amazon150a.png);
   --mewtwo1: #efb2fb;
   --mewtwo2: #acc6f8;
-  --mewtwofront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
+  --mewtwofront: url(https://masternode.id/Amazon200a.png);
 }
 
 .card {
-  width: 71.5vw;
-  height: 100vw;
+  width: 505vw;
+  height: 262vw;
   position: relative;
   overflow: hidden;
   margin: 20px;
@@ -365,7 +365,7 @@
 
 html, body {
   height: 100%;
-  background-color: #333844;
+  background-color: #eb5ab8;
   padding: 0;
   z-index: 1;
   transform: translate3d(0, 0, 0.1px);
@@ -373,7 +373,7 @@ html, body {
 
 body {
   color: white;
-  background-color: #333844;
+  background-color: #eb5ab8;
   font-family: "Heebo", sans-serif;
   text-align: center;
 }
