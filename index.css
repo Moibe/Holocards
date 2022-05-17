@@ -5,6 +5,7 @@
   --charizard1: #fac;
   --charizard2: #ddccaa;
   --charizardfront: url(https://masternode.id/Amazon50a.png);
+  --botonpaypal: url(https://masternode.id/botonpaypal.png);
   --pika1: #54a29e;
   --pika2: #a79d66;
   --pikafront: url(https://masternode.id/Amazon100a.png);
@@ -17,8 +18,8 @@
 }
 
 .card {
-  width: 222px;
-  height: 67px;
+  width: 262vw;
+  height: 505vw;
   position: relative;
   overflow: hidden;
   margin: 20px;
@@ -44,8 +45,8 @@
 }
 
 .paypal {
-  width: 262vw;
-  height: 505vw;
+  width: 222px;
+  height: 67px;
   position: relative;
   overflow: hidden;
   margin: 20px;
@@ -100,6 +101,12 @@
   --color4: #8ec5d6;
   --color5: #b98cce;
   --front: var(--eeveefront);
+}
+
+.paypal.boton {
+  --color1: var(--charizard1);
+  --color2: var(--charizard2);
+  --front: var(--botonpaypal);
 }
 
 .card:before,
