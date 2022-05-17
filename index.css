@@ -17,8 +17,8 @@
 }
 
 .card {
-  width: 505vw;
-  height: 262vw;
+  width: 222px;
+  height: 67px;
   position: relative;
   overflow: hidden;
   margin: 20px;
@@ -40,6 +40,34 @@
   .card {
     width: clamp(12.9vw, 61vh, 18vw);
     height: clamp(18vw, 85vh, 25.2vw);
+  }
+}
+
+.paypal {
+  width: 262vw;
+  height: 505vw;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 10;
+  touch-action: none;
+  border-radius: 5%/3.5%;
+  box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2), -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  will-change: transform, filter;
+  background-color: #040712;
+  background-image: var(--front);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: center;
+}
+
+@media screen and (min-width: 600px) {
+  .paypal {
+    width: clamp(4vw, 20vh, 5vw);
+    height: clamp(2vw, 8vh, 3vw);
   }
 }
 
