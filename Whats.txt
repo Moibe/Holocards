@@ -1,0 +1,16 @@
+https://api.whatsapp.com/send/?phone=+529622156845&text=Hola+%C2%B0+ActasMx+%C2%B0%21+Vi+❤️+anuncio+en+Google+me+interesa+un+acta+de+nacimiento
+
+https://web.whatsapp.com/send/?phone=+525632303680&text=Buen+día+https://google.com+Adiós
+
+Estos son los formatos que funcionan: 
+
+2211172708
+522211172708
+5212211172708
++5212211172708
++522211172708
+
+y si acepta emojis!!!!
+
+Alpha Summit
++525632303680

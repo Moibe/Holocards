@@ -1,7 +1,7 @@
 :root {
   --color1: rgb(0, 231, 255);
   --color2: rgb(255, 0, 231);
-  --back: url(https://masternode.id/botonpaypal.png);
+  --back: url();
   --charizard1: #fac;
   --charizard2: #ddccaa;
   --charizardfront: url(https://masternode.id/Amazon50a.png);
@@ -17,12 +17,18 @@
   --mewtwofront: url(https://masternode.id/Amazon200a.png);
 }
 
+.center {
+  text-align: center;
+  /* border: 3px solid green; */
+  margin: 25px;
+}
+
 .card {
   width: 262vw;
   height: 505vw;
   position: relative;
   overflow: hidden;
-  margin: 20px;
+  margin: 10px;
   overflow: hidden;
   z-index: 10;
   touch-action: none;
@@ -49,7 +55,7 @@
   height: 505vw;
   position: relative;
   overflow: hidden;
-  margin: 20px;
+  margin: 10px;
   overflow: hidden;
   z-index: 10;
   touch-action: none;
@@ -67,8 +73,8 @@
 
 @media screen and (min-width: 600px) {
   .paypal {
-    width: clamp(4vw, 20vh, 5vw);
-    height: clamp(2vw, 8vh, 3vw);
+    width: clamp(10vw, 100vh, 11vw);
+    height: clamp(2vw, 100vh, 3vw);
   }
 }
 
