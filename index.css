@@ -71,6 +71,7 @@
   transform-origin: center;
 }
 
+/* //Cuando sean mobile. */
 @media screen and (min-width: 600px) {
   .paypal {
     width: clamp(10vw, 100vh, 11vw);
