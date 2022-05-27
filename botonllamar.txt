@@ -1,0 +1,14 @@
+<script src="/bundles/app/js/button.js?merchant=HVY4MNGQM9ZN8"
+                                                    data-button="buynow"
+                                                    data-name="Digital Download PT"
+                                                    data-amount="23"
+                                                    data-currency="USD"
+                                                    data-size="small"
+                                                    data-noshipping= 1
+                                                    data-return="https://www.softwarehomework.com/pt/success"
+                                                    data-cancel_return="https://www.softwarehomework.com/pt/return/12"
+                                                    data-currency_code="USD"
+                                                    data-locale="pt_PT"
+                                                    data-type="form"
+                                                    async>
+                                                </script>
