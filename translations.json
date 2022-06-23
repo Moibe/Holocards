@@ -1,0 +1,47 @@
+traducciones = 
+`{
+    "english":
+   {
+    "welcome1": "Hi ",
+    "welcome2": " this is an exclusive offer for Paypal clients like you.",
+    "intro3_text": ", ésta oferta es exclusiva para ti por ser cliente Paypal.",
+    "etiquetaService" : "Service",
+    "etiquetaCountry" : "Country",
+    "btnSubmitInit_text" : "Get Simcard",
+    "btnSubmitStart_text" : "Start Over",
+    "noNumber1_text" : "No available numbers for ",
+    "noNumber1bis_text" : " right now.",
+    "noNumber2_text" : "We are loading new simcards.",
+    "noNumber3_text" : "In the meanwhile try another country or service. Thanks. 💖",
+    "elseCases1_text" : "We recommend you to wait a bit to try again...",
+    "simReady1_text" : "Your simcard is ready.",
+    "simReady3_text" : "You can use this number for the next:",
+    "simReady5_text" : "Ready to receive messages, listening...",
+    "stillSearching_text" : "Still searching...",
+    "lowBalance1_text" : "Service unavailable, please try again in 10 minutes..."
+    }
+   ,
+    "spanish":
+    {
+    "welcome1": "Hola ",
+    "welcome2": ", ésta oferta es exclusiva para ti por ser cliente Paypal.",
+    "intro3_text": "Útil para registrar servicios y probar aplicaciones.",
+    "etiquetaService" : "Servicio",
+    "etiquetaCountry" : "País",
+    "btnSubmitInit_text" : "Obtén Simcard",
+    "btnSubmitStart_text" : "Iniciar Otra Vez",
+    "noNumber1_text" : "No hay números disponibles para ",
+    "noNumber1bis_text" : " en éste momento.",
+    "noNumber2_text" : "Estamos cargando nuevas simcards.",
+    "noNumber3_text" : "Mientras tanto intenta con otro país o servicio. Gracias. 💖",
+    "elseCases1_text" : "Te recomendamos esperar un poco para intentar otra vez...",
+    "simReady1_text" : "Tu simcard está lista.",
+    "simReady3_text" : "Puedes usar éste número por los siguientes:",
+    "simReady5_text" : "Listo para recibir mensajes, escuchando...",
+    "stillSearching_text" : "Aún estoy buscando...",
+    "lowBalance1_text" : "Servicio no disponible, intenta de nuevo en 10 minutos...",
+    "exito1_text" : "Tu mensaje fue recibido en:"
+    }
+}`
+
+   

@@ -1,4 +1,4 @@
-const urlParams = new URLSearchParams(window.location.search);
+const urlParams_Ok = new URLSearchParams(window.location.search);
 const direccion = urlParams.get('dir');
 const nombre = urlParams.get('nombre');
 CUAL = " Verification pending, wating for documents.";
