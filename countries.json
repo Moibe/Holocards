@@ -1,0 +1,6 @@
+paises = 
+`{
+    "DE": {"name": "Italia", "locale": "de-de"},
+    "MX": {"name": "Mexico", "locale": "es-mx"},
+    "US": {"name": "United States", "locale": "en-us"}
+}`
