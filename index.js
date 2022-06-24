@@ -37,6 +37,7 @@ console.log(currency);
 
 escribeTitulo();
 escribeNombre(txid);
+console.log("Voy a entrar a escribir el precio...");
 escribePrecio(); 
 escribeFooter();
 }
@@ -66,19 +67,20 @@ function escribeNombre(txid){
 
 function escribePrecio(){
 
-    precio = 25;
+    
 
     //Textos Fijos
     texto_price1 = jsonTraducciones[idioma].texto_price1;
         
-    texto_completo = texto_price1 + precio + " " + currency;
+    
 
     for (let i = 1; i < 5; i++) {
+        precio = 25*i;
+        texto_completo = texto_price1 + precio + " " + currency;
         price = document.getElementById(i);
         price.innerHTML = texto_completo;
+        
       }
-    
-    
 
 }
 
