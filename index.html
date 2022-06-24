@@ -14,43 +14,49 @@
 </head>
 
 <body onload="carga()">
- 
+
+<div>
+<img id="logo" src="halfprice.cards.jpg" alt="Half Price Cards" style="display: none;">
+</div>
+
 <main id=app>
-    <h1 id="top_title" class="animate-charcter"></h1>
-   
-    <h3><p id="welcome_message"></p></h3>
+  <div class="divtitle"><h1 id="top_title" class="animate-charcter"></h1></div>
+    
+    <h3 id="welcome_message"></h3>
     <section class="cards">
       <div>
-        <div class="card charizard animated"></div>
+        
+        <div class="card charizard animated"><p id="5" class="precio_card">$50MXN</p></div>
         <br>
         <h3 id="1"></h3>
-        <div id="btnPaypal1" type="submit"> 
+        <section id="btnPaypal1" type="submit"> 
           <p id="referencia1"></p>
-        </div>
+        </section>
         
       </div>
       <div>
-        <div class="card pika animated"></div>
+        <div class="card pika animated"><p id="6" class="precio_card">$50MXN</p></div>
         <br>
         <h3 id="2"></h3>
        
-        <div id="btnPaypal2" type="submit"> 
+        <section id="btnPaypal2" type="submit"> 
           <p id="referencia2"></p>
-        </div>
+        </section>
       </div>
       <div>
-        <div class="card eevee animated"></div>
+        <div class="card eevee animated"><p id="7" class="precio_card">$50MXN</p></div>
         <br>
         <h3 id="3"></h3>
         
-        <div id="btnPaypal3" type="submit"> 
+        <section id="btnPaypal3" type="submit"> 
           <p id="referencia3"></p>
-        </div>
+        </section>
       </div>  
-      <div class="centrado">     
+      <div>     
         <!-- Carta -->
-        <div class="card mewtwo animated"></div>
+        <div class="card mewtwo animated"><p id="8" class="precio_card">$50MXN</p></div>
         <!-- Precio -->
+        <br>
         <h3 id="4"></h3>
         <!-- Boton Venta -->
         <section id="btnPaypal4"  type="submit"> 

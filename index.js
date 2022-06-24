@@ -4,6 +4,7 @@ let idioma = 'english';
 let pais;
 let nombre_completo; 
 let locale; 
+let precio_card = 50; 
 
 //Declaramos el json que contendrá toda la información.
 let jsonTransactions;
@@ -13,6 +14,17 @@ function carga(){
 //Se obtiene el id del arreglo con el que vamos a trabajar. 
 const urlParams = new URLSearchParams(window.location.search);
 const txid = urlParams.get('txid');
+console.log("Éste es el txid...");
+console.log(txid);
+
+if(txid== null){
+    console.log("El txid es NULO..."); 
+    //disable all
+    all = document.getElementById('app');
+    all.style.display = 'none';
+    logo = document.getElementById('logo');
+    logo.style.display = 'block';
+}
 
 //Transacciones
 jsonTransactions = JSON.parse(transacciones);
@@ -38,7 +50,8 @@ console.log(currency);
 escribeTitulo();
 escribeNombre(txid);
 console.log("Voy a entrar a escribir el precio...");
-escribePrecio();
+escribePrecioCard();
+escribePrecios();
 construyePaypal('vartzid','varnodo'); 
 escribeFooter();
 }
@@ -65,10 +78,37 @@ function escribeNombre(txid){
     welcome_message.innerHTML = texto_completo;
     
 }
+function escribePrecioCard(){
 
-function escribePrecio(){
-
+    for (let i = 5; i < 9; i++) {
+    //Card1
+    precioImpreso = precio_card + currency; 
+    card_precio = document.getElementById(i);
+    card_precio.innerHTML = precioImpreso;
+    precio_card = precio_card + 50; 
+    }
     
+    /*  //Card2
+     precioImpreso = precio_card + currency; 
+     card_precio = document.getElementById('precio_card2');
+     card_precio.innerHTML = precioImpreso2;
+     
+      //Card3
+    precioImpreso = precio_card + currency; 
+    card_precio = document.getElementById('precio_card3');
+    card_precio.innerHTML = precioImpreso3;
+
+     //Card4
+     precioImpreso = precio_card + currency; 
+     card_precio = document.getElementById('precio_card4');
+     card_precio.innerHTML = precioImpreso4; */
+ 
+
+
+
+}
+
+function escribePrecios(){
 
     //Textos Fijos
     texto_price1 = jsonTraducciones[idioma].texto_price1;

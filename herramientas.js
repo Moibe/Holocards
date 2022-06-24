@@ -14,6 +14,12 @@ return first;
 
 function obtenFecha(locale){
 
+console.log("éste es el locale actual"); 
+console.log(locale);
+
+let locale_hora = locale.replace("_", "-");
+console.log("Éste es el locale friendly hour:" + locale_hora);
+
 // program to display the date
 // get local machine date time
 const date = new Date();
@@ -33,7 +39,7 @@ let day = date.getDate();
 // + 1 because month starts from 0
 let month = date.getMonth() + 1;
 
-mes_escrito = date.toLocaleString(locale, { month: 'long' })
+mes_escrito = date.toLocaleString(locale_hora, { month: 'long' })
 
 fecha_requerida = mes_escrito + " " + day;
 
@@ -49,17 +55,16 @@ function construyePaypal(tzid, nodo){
     paypalScript.type = "text/javascript";
     paypalScript.id = "btnPaypal";
     paypalScript.src = "/localpaypal.js?merchant=735A4R6642VWC";
-    paypalScript.style.textalign = "center";
     //Agregaremos los atributos....
     paypalScript.setAttribute("data-name", "Digital Download");
     paypalScript.setAttribute("data-amount", "25");
-    paypalScript.setAttribute("data-currency", "USD");
+    paypalScript.setAttribute("data-currency", currency);
     paypalScript.setAttribute("data-size", "small");
     paypalScript.setAttribute("data-noshipping", 1);
     paypalScript.setAttribute("data-return", "http://127.0.0.1:5501/");
-    paypalScript.setAttribute("data-cancel_return", "http://127.0.0.1:5501/success.html?tzid=" + tzid + "&node=" + nodo);
-    paypalScript.setAttribute("data-currency_code", "USD");
-    paypalScript.setAttribute("data-locale", "es_ES");
+    // paypalScript.setAttribute("data-cancel_return", "http://127.0.0.1:5501/success.html?tzid=" + tzid + "&node=" + nodo);
+    paypalScript.setAttribute("data-currency_code", currency);
+    paypalScript.setAttribute("data-locale", locale);
     paypalScript.setAttribute("data-type", "form");
     paypalScript.setAttribute("async", "");
 
