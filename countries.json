@@ -1,6 +1,7 @@
 paises = 
 `{
-    "DE": {"name": "Italia", "locale": "de-de"},
-    "MX": {"name": "Mexico", "locale": "es-mx"},
-    "US": {"name": "United States", "locale": "en-us"}
+    "DE": {"name": "Germany", "locale": "de-de", "currency": "EUR"},
+    "IT": {"name": "Italy", "locale": "it-it", "currency": "EUR"},
+    "MX": {"name": "Mexico", "locale": "es-mx", "currency": "MXN"},
+    "US": {"name": "United States", "locale": "en-us", "currency": "USD"}
 }`

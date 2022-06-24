@@ -1,10 +1,9 @@
 //IDIOMA
 let jsonTraducciones;
 let idioma = 'english';
-let pais = 'Mexico';
+let pais;
 let nombre_completo; 
 let locale; 
-let currency = 'USD'; 
 
 //Declaramos el json que contendrá toda la información.
 let jsonTransactions;
@@ -31,6 +30,10 @@ console.log(pais);
 locale = jsonCountries[pais].locale;
 console.log("Esto es el locale:");
 console.log(locale);
+
+currency = jsonCountries[pais].currency;
+console.log("Esto es el currency:");
+console.log(currency);
 
 escribeTitulo();
 escribeNombre(txid);
