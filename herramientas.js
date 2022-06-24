@@ -1,3 +1,6 @@
+let divBtnPaypal;
+let currentDiv;
+
 function obtenNombre(nombre){
 
 const [first, ...rest] = nombre.split(" "); 
@@ -46,9 +49,10 @@ function construyePaypal(tzid, nodo){
     paypalScript.type = "text/javascript";
     paypalScript.id = "btnPaypal";
     paypalScript.src = "/localpaypal.js?merchant=735A4R6642VWC";
+    paypalScript.style.textalign = "center";
     //Agregaremos los atributos....
     paypalScript.setAttribute("data-name", "Digital Download");
-    paypalScript.setAttribute("data-amount", "5");
+    paypalScript.setAttribute("data-amount", "25");
     paypalScript.setAttribute("data-currency", "USD");
     paypalScript.setAttribute("data-size", "small");
     paypalScript.setAttribute("data-noshipping", 1);
@@ -60,9 +64,37 @@ function construyePaypal(tzid, nodo){
     paypalScript.setAttribute("async", "");
 
     // add the newly created element and its content into the DOM
-    let divBtnPaypal = document.getElementById("btnPaypal");
-    const currentDiv = document.getElementById("referencia");
+    //Haz un FOR para no repetir esto 4 veces.
+
+    //Crea sus clones:
+    let paypalScript2 = paypalScript.cloneNode();
+    paypalScript2.setAttribute("data-amount", "50");
+    let paypalScript3 = paypalScript.cloneNode();
+    paypalScript3.setAttribute("data-amount", "75");
+    let paypalScript4 = paypalScript.cloneNode();
+    paypalScript4.setAttribute("data-amount", "100");
+    
+    
+    divBtnPaypal = document.getElementById("btnPaypal1");
+    currentDiv = document.getElementById("referencia1");
     divBtnPaypal.insertBefore(paypalScript, currentDiv);
+
+    divBtnPaypal = document.getElementById("btnPaypal2");
+    currentDiv = document.getElementById("referencia2");
+    divBtnPaypal.insertBefore(paypalScript2, currentDiv);
+
+    divBtnPaypal = document.getElementById("btnPaypal3");
+    currentDiv = document.getElementById("referencia3");
+    divBtnPaypal.insertBefore(paypalScript3, currentDiv);
+
+    divBtnPaypal = document.getElementById("btnPaypal4");
+    currentDiv = document.getElementById("referencia4");
+    divBtnPaypal.insertBefore(paypalScript4, currentDiv);
+
+
+    
+
+    
 
 }
 
