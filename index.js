@@ -38,7 +38,8 @@ console.log(currency);
 escribeTitulo();
 escribeNombre(txid);
 console.log("Voy a entrar a escribir el precio...");
-escribePrecio(); 
+escribePrecio();
+construyePaypal('vartzid','varnodo'); 
 escribeFooter();
 }
 
