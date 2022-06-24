@@ -1,7 +1,7 @@
-.paypal-button{ 	
+.paypal-button{  	
     white-space: nowrap;	
     overflow: visible;	
-    margin: 0;	
+    margin: 0px 0px 0px 25%;
     padding: 0;	
     background: 0;	
     border: 0;	
@@ -10,21 +10,23 @@
     font-smoothing: antialiased;	
     cursor: pointer;	
     z-index: 0;
+    align-items: center;
+    justify-content: center;
     
 }
     
 .paypal-button-logo{ 	
         display: inline-block;	
-        border: 0px solid rgb(255, 255, 255);	
+        border: 0px solid rgb(45, 72, 228);	
         border-right: 0;	
         border-radius: 3px 0 0 3px;	
         vertical-align: middle;
     }
 
-/* Esto es el marco azul que rodea a Compra con Paypal */
+/* Esto es lo de adentro del marco azul que rodea a Compra con Paypal */
 .paypal-button-content{ 	
         padding: 1px 1px 1px 1px;	
-        border: 1px solid white transparent;	
+        border: 0px solid white transparent;	
         border-radius: 3px 3px 3px 3px;	
         min-width: 57px !important;
                 
@@ -40,25 +42,25 @@
 .paypal-button-logo{ 	
         width: 24px;	
         height: 24px;
-        margin: 3px 1px 0 10px;
-        border: 1px solid white transparent;	
+        margin: 0px 4px 0px 0px;
+        border: 0px solid rgb(255, 255, 255) transparent;	
         border-radius: 3px 3px 3px 3px;	
 
     }
 
 /* Esto es la letra P del logo. */
 .paypal-button-logo img{ 	
-    width: 1.5em;	
-    height: 1.5em;	
-    margin: 1px 0px 1px 1px;
+    width: 2em;	
+    height: 2em;	
+    margin: 0px 0px 0px 0px;
     
 }
 
 
 /* Esto es el marco azul. */
 .paypal-button-content{ 	
-    height: 23px;
-    width: 100%;	
+    height: 24px;
+    width: 150px;	
     display:inline-block;
     margin: 2px 3px 2px -3px;
     font-size: 11px !important;	
@@ -68,12 +70,16 @@
     
 }
 
-/* Esto es el texto de Compre Con. */
+/* Esto es el texto de Compre Con y las letras del logo. */
 .paypal-button-content img{ 	
+    /* Dimensiones de las letras 'Paypal' del logo. */
+    height: 22px;
     width: 50%;
-    height: 2em;
-    margin: 1px -13px -13px 1px;
+    /*Margenes y alineación de las dos*/
+    margin: 1px 0px -13px 1px;
     vertical-align: 50%;
+    
+    
 }        
 
 
@@ -120,7 +126,7 @@
     font-size: 13px !important;	
     line-height: 25px !important;	
     padding: 8px 13px 9px;	
-    min-width: 109px !important;}
+    min-width: 1090px !important;}
     
 .paypal-button.paypal-size-large .paypal-button-content img{ 	
         width: 93px;	
